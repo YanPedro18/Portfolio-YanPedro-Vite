@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.container_flex {
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+}
+.container_flex>h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--main-color-red);
+}
+.container_flex>h3::before {
+  content: 'Quem sou';
+  color: rgba(30, 29, 29, 0.468);
+  z-index: -1;
+  top: 45%;
+  display: flex;
+  font-weight: bold;
+  position: relative;
+  font-size: 3.5rem;
+}
+.container_flex>h1 {
+  cursor: auto;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  font-size: 2.4rem;
+  color: #ffff;
+}
+.container_flex>p {
+  color: #ffff;
+  font-size: 0.9rem;
+      width:  25rem;
+  margin: 1.0rem 0rem 1.0rem 0rem;
+}
+.container_flex>button {
+  margin-top: 0.5rem;
+  background: var(--main-color-red);
+  border: none;
+  padding: 9px 20px;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 10rem;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+.container_flex>button>a {
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+  transform: skew(21deg);
+  color: white;
+}
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgba(20, 20, 20, 0.102);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+button:hover {
+  color: #fff;
+}
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+@keyframes icons {
+  0% {
+    transform: translate(2px, -2px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(2px, 2px);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(2px, 3px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(2px, 5px);
+    opacity: 0;
+  }
+}
+.container_flex>button>a>svg {
+  transition: all 2s;
+  animation: icons infinite 3.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container_flex2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 2s;
+  filter: drop-shadow(-1px 6px 5px rgba(4, 1, 1, 0.563));
+}
+@keyframes ola {
+  0% {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(35% 0%, 100% 0%, 45% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  75% {
+    clip-path: polygon(15% 0%, 100% 0%, 55% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+}
+.container_flex2>img {
+  width: 60%;
+  margin: 0 auto;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transition: all 2s;
+  animation: ola infinite backwards 11.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.aside {
+  width: 55%;
+  height: 100%;
+  z-index: 999;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.aside>a {
+  cursor: pointer;
+  color: var(--main-color-red);
+  margin-top: 0.5rem;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.aside>a:hover {
+  transform: scale(1.1);
+  mix-blend-mode: multiply;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.aside>a:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  box-shadow: 0px 0px 30px 25px #dc23230a;
+}
+@media screen and (max-width: 468px) {
+  .aside {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(2.5rem);
+  }
+  .aside>a {
+    margin-right: 0.5rem;
+  }
+  .container_flex2>img {
+    margin-top: 2rem;
+    transform: translateX(-1.1rem);
+  }
+  .container_flex>p {
+    font-size: 1rem;
+    width: 25rem;
+  }
+  .container_flex>button>a {
+    font-weight: bold;
+  }
+  .container_flex>h1 {
+    margin: 0 auto !important;
+    margin-top: 1.5rem !important;
+  }
+}

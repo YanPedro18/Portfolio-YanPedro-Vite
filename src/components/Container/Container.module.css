@@ -1,0 +1,32 @@
+.container {
+  width: 100vw;
+  height: 91vh;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111111;
+}
+.container::before {
+  content: '';
+  width: 100%;
+  top: 50%;
+  height: 100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  filter: opacity(0.3%);
+  background-image: linear-gradient(#f82440 1px, transparent 1px), linear-gradient(to right, #f82440 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
+}
+@media screen and (max-width: 468px) {
+  .container {
+    flex-direction: column;
+  }
+  .container::before {
+    height: 100%;
+  }
+}

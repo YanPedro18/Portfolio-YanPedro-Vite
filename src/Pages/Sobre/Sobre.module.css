@@ -1,0 +1,114 @@
+.sobre_container {
+    display: flex;
+    width: 100vw;
+}
+.sobre_left {
+    flex: 1;
+    position: relative;
+    top: 0; 
+}
+.sobre_right {
+    flex: 1;
+    /*👉 centralização entre as divs👈*/
+    margin-right: 4.2rem;
+    z-index: 999;
+}
+.sobre_right>h1 {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2.9rem;
+    color: white;
+}
+.sobre_right>h1>span {
+    color: var(--main-color-red);
+}
+.section_02 {
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 92vh;
+    z-index: 999;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+.section_02::before {
+    content: '';
+    width: 100%;
+    top: 50%;
+    height: 100vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    filter: opacity(0.3%);
+    background-image: linear-gradient(#f82440 1px, transparent 1px), linear-gradient(to right, #f82440 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+}
+.section_02_skills {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section_02_skills h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+}
+.section_02_skills>h1>strong {
+    color: var(--main-color-red);
+}
+.skills_flex {
+    padding-bottom: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+.skills_flex>* {
+    flex-basis: calc(30% - 10px);
+    margin-bottom: 10px;
+}
+.skills_flex>*:nth-child(2n+1) {
+    margin-right: auto;
+}
+.skills_flex>*:nth-child(2n) {
+    margin-right: auto;
+}
+.skills_flex>*:last-child {
+    margin-right: auto;
+}
+  * {
+    scrollbar-width: auto;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #191919;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--main-color-red);
+    border-radius: 10px;
+    border: 3px transparent #ffffff;
+  }
+  @media screen and (max-width: 468px) {
+    .sobre_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+        z-index: -1;
+    }
+    .sobre_right {
+        margin-top: 2rem;
+        margin-right: 0;
+        z-index: 0;
+    }
+    h1 {
+        margin-right: 0 !important;
+    }
+  }
