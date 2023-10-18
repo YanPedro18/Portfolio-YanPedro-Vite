@@ -39,8 +39,8 @@ function CardProfile() {
           {" "}
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1S-ZrlBISZqZiX_egngesWl1zvUSLacUx/view?usp=sharing"
-            download="https://drive.google.com/file/d/1S-ZrlBISZqZiX_egngesWl1zvUSLacUx/view?usp=sharing" 
+            href="https://drive.google.com/file/d/10zJsAKbAhA-cpJn8HUvCra6VxWegfLIm/view?usp=sharing"
+            download="https://drive.google.com/file/d/10zJsAKbAhA-cpJn8HUvCra6VxWegfLIm/view?usp=sharing" 
           >
             {" "}
             Currículo
