@@ -77,6 +77,15 @@ const skills = [
 const accordion = [
   {
     id: 1,
+    title: "Estagiário em Desenvolvimento de Software FullStack - SMPU/DPLM",
+    date: "2023/07 - 2023/09 (em andamento)",
+    job: "Estagiário",
+    text: "Atuei como estagiário colaborando no desenvolvimento de sistemas inovadores utilizando planilhas, JavaScript, Google Sheets, Appscript, React, HTML, CSS, Materialize e Git para automação e otimização de processos internos na SMPU/DPLM. Minhas principais responsabilidades incluíram o uso avançado de JavaScript e Google Sheets para criar funcionalidades dinâmicas e interativas, bem como contribuições ativas no desenvolvimento front-end com React, HTML e CSS para interfaces atraentes e intuitivas. Além disso, realizei correção de bugs e implementação de novas features.",
+    skill1: "React · AppScript",
+    skill2: "HTML · Materialize",
+  },
+  {
+    id: 2,
     title: "Estagiário HelpDesk - CGE",
     date: "2022/10 - 2023/06",
     job: "Estagiário",
@@ -85,7 +94,7 @@ const accordion = [
     skill2: "Joomla",
   },
   {
-    id: 2,
+    id: 3,
     title: "Análise Desenvolvimento de Sistemas - Una",
     date: "2022/02 - 2024/06 (em andamento)",
     job: "4* Período",
@@ -93,6 +102,7 @@ const accordion = [
     skill1: "Java",
     skill2: "MySql & UML",
   },
+
 ];
 
 function Sobre() {

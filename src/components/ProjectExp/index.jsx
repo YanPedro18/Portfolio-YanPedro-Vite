@@ -38,7 +38,7 @@ function ProjectExp() {
         >
           <div className={styles.circle}>
             <strong>+2</strong>
-            <p>Experiencia</p>
+            <p>Experiência</p>
           </div>
         </motion.div>
         <motion.div

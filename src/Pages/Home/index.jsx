@@ -2,7 +2,7 @@
 import Header from "../../components/Header";
 import Container from "../../components/Container";
 import styles from "./Home.module.css";
-import photo from "./img/photo.jpeg";
+import photo from "./img/photo6.jpeg";
 import { animations } from "../Sobre";
 import {
   LinkedinLogo,

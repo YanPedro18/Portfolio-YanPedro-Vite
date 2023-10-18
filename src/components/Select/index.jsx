@@ -8,6 +8,7 @@ import imgYanSongs from "../../assets/ImgYanSongs.png";
 import imgEnsinio from "../../assets/imgEnsinio.png";
 import imgAiko from "../../assets/imgAiko.png";
 import imgMultiset from "../../assets/imgMultiset.png";
+import imgEcommerce from "../../assets/imgEcommerce.jpg";
 import { motion } from "framer-motion";
 import { customEase } from "../../Pages/Sobre";
 
@@ -38,6 +39,23 @@ function Select() {
                 skill3="DBfake"
                 linkRep={"https://github.com/YanPedro18/YanSongs-App"}
                 linkSit={"https://yansongs-app.vercel.app/"}
+              />
+            </motion.div>
+            <motion.div
+              key="ecommerce-FlagStore"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · ecommerce-FlagStore"
+                imgs={imgEcommerce}
+                skill1="TypeScript"
+                skill2="Styled-Components"
+                skill3="Context API"
+                linkRep={"https://github.com/YanPedro18/ecommerce-FlagStore"}
+                linkSit={"https://ecommerce-flagstore-git-main-yanpedro18.vercel.app/"}
               />
             </motion.div>
             <motion.div
@@ -115,6 +133,23 @@ function Select() {
                 skill3="HTML"
                 linkRep={"https://github.com/YanPedro18/Yan--Pizzas"}
                 linkSit={"https://yan-pizzas-git-main.yanpedro18.vercel.app/"}
+              />
+            </motion.div>
+            <motion.div
+              key="ecommerce-FlagStore"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · ecommerce-FlagStore"
+                imgs={imgEcommerce}
+                skill1="TypeScript"
+                skill2="Styled-Components"
+                skill3="Context API"
+                linkRep={"https://github.com/YanPedro18/ecommerce-FlagStore"}
+                linkSit={"https://ecommerce-flagstore-git-main-yanpedro18.vercel.app/"}
               />
             </motion.div>
             <motion.div
