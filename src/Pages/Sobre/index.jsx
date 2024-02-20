@@ -15,6 +15,9 @@ import imgSass from "../../assets/img-sass.svg";
 import imgNode from "../../assets/img-node.svg";
 import imgJava from "../../assets/img-java.svg";
 import imgFigma from "../../assets/Figma-logo.svg";
+import imgASPnet from "../../assets/img-aspnet.svg";
+import imgCsharp from "../../assets/img-Csharp.svg";
+import imgSsms from "../../assets/img-ssms.svg";
 import Mouse from "../../components/Mouse";
 import { useEffect, useRef } from "react";
 
@@ -29,33 +32,33 @@ const skills = [
   {
     img: imgReact,
     text: "React",
-    number: 55,
+    number: 65,
   },
   {
     img: imgStyled,
     text: "Styled - Components",
-    number: 67,
+    number: 77,
   },
   {
     img: imgSql,
     text: "MySql",
-    number: 30,
+    number: 40,
   },
 
   {
     img: imgNode,
     text: "Node.Js",
-    number: 24,
+    number: 34,
   },
   {
     img: imgFigma,
     text: "Figma",
-    number: 64,
+    number: 74,
   },
   {
     img: imgVite,
     text: "Vite.Js",
-    number: 43,
+    number: 63,
   },
   {
     img: imgSass,
@@ -72,36 +75,62 @@ const skills = [
     text: "Java",
     number: 33,
   },
+  {
+    img: imgASPnet,
+    text: "ASP.NET Core MVC",
+    number: 35,
+  },
+  {
+    img: imgCsharp,
+    text: "C#",
+    number: 44,
+  },
+  {
+    img: imgSsms,
+    text: "SSMS + SqlServer",
+    number: 38,
+  },
 ];
 
 const accordion = [
   {
     id: 1,
-    title: "Estagiário em Desenvolvimento de Software FullStack - SMPU/DPLM",
-    date: "2023/07 - 2023/09 (em andamento)",
+    title: "Estagiário em Desenvolvimento de Software FullStack - Reply / Hermes Reply",
+    date: "04/12/2023 - (até o momento)",
+    job: "Estagiário",
+    text: "Durante minha passagem na Reply/Hermes Reply, contribuí para o desenvolvimento do InfoCenter, uma ferramenta crucial da Petronas para controle de estoque e operações internas. Também participei de testes na Stellantis no sistema echange, em 5 países. Minhas responsabilidades incluíram desenvolvimento de funcionalidades no InfoCenter, uso avançado de ASP.NET Core MVC e .NET Framework Core 8, implementação de JavaScript, jQuery e React para interfaces dinâmicas, gerenciamento eficiente com Azure DevOps e Git, além de correção de bugs e testes no sistema echange.",
+    skill1: "ASP.NET Core MVC · .NET Core 8 · JavaScript",
+    skill2: " jQuery · React · Azure DevOps · Jira · Git"
+  },
+  {
+    
+    id: 2,
+    title: "Estagiário em Desenvolvimento de Software Front-end - SMPU/DPLM",
+    date: "2023/07 - 2023/12",
     job: "Estagiário",
     text: "Atuei como estagiário colaborando no desenvolvimento de sistemas inovadores utilizando planilhas, JavaScript, Google Sheets, Appscript, React, HTML, CSS, Materialize e Git para automação e otimização de processos internos na SMPU/DPLM. Minhas principais responsabilidades incluíram o uso avançado de JavaScript e Google Sheets para criar funcionalidades dinâmicas e interativas, bem como contribuições ativas no desenvolvimento front-end com React, HTML e CSS para interfaces atraentes e intuitivas. Além disso, realizei correção de bugs e implementação de novas features.",
     skill1: "React · AppScript",
     skill2: "HTML · Materialize",
   },
   {
-    id: 2,
+    id: 3,
     title: "Estagiário HelpDesk - CGE",
     date: "2022/10 - 2023/06",
     job: "Estagiário",
     text: "Responsável pela área de suporte necessário a infraestrutura de rede e aos funcionários, assistência ao desenvolvimento de sites, Joomla para criação e manutenção de sistemas, PHP, JavaScript, manutenção de maquinas, Active Directory, Office 365, proxys, instalação de softwares.",
     skill1: "Active Directory",
-    skill2: "Joomla",
+    skill2: "Joomla · PHP",
   },
   {
-    id: 3,
+    id: 4,
     title: "Análise Desenvolvimento de Sistemas - Una",
     date: "2022/02 - 2024/06 (em andamento)",
-    job: "4* Período",
-    text: "Ensino Superior, Análise de Sistemas, Atividades e grupos: (4* Período 4/5) Competências: UML (Linguagem de modelagem unificada) · MVC · Java · NetBeans · Banco de dados Oracle · MySQL · PhpMyAdmin · PHP · JavaScript · TDD · BDD · métodos e técnicas engenharia de software.",
-    skill1: "Java",
+    job: "5* Período",
+    text: "Ensino Superior, Análise de Sistemas, Atividades e grupos: (5* Período 5/5) Competências: UML (Linguagem de modelagem unificada) · MVC · Java · NetBeans · Banco de dados Oracle · MySQL · Node · Express.Js · React/Angular · PhpMyAdmin · PHP · JavaScript · TDD · BDD · Scrum · Kanban · métodos e técnicas engenharia de software.",
+    skill1: "Java · Angular",
     skill2: "MySql & UML",
   },
+
 
 ];
 
@@ -198,7 +227,6 @@ function Sobre() {
                   ))}
                 </div>
               </section>
-              {/* Conteúdo que ficará ao lado direito e poderá rolar */}
             </div>
           </div>
         </section>

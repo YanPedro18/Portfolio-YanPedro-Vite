@@ -87,8 +87,8 @@ function Home() {
               {" "}
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/10zJsAKbAhA-cpJn8HUvCra6VxWegfLIm/view?usp=sharing"
-                download="https://drive.google.com/file/d/10zJsAKbAhA-cpJn8HUvCra6VxWegfLIm/view?usp=sharing"
+                href="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing"
+                download="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing"
               >
                 {" "}
                 Currículo

@@ -58,7 +58,6 @@ function Accordion({ title, date, job, text, skills1, skills2 }) {
                 <h1>Hard Skills:</h1>
                   <ul className={styles.list_skills}>
                     <li><strong>Javascript</strong></li>
-                    <li><strong>PHP</strong></li>
                     <li><strong>{skills1}</strong></li>
                     <li><strong>{skills2}</strong></li>
                   </ul>

@@ -34,13 +34,13 @@ function CardProfile() {
             <GithubLogo size={30} />
           </Link>
         </aside>
-        <p>&copy; 2023 Yan. Todos os Direitos Reservados</p>
+        <p>&copy; 2024 Yan. Todos os Direitos Reservados</p>
         <button>
           {" "}
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/10zJsAKbAhA-cpJn8HUvCra6VxWegfLIm/view?usp=sharing"
-            download="https://drive.google.com/file/d/10zJsAKbAhA-cpJn8HUvCra6VxWegfLIm/view?usp=sharing" 
+            href="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing"
+            download="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing" 
           >
             {" "}
             Currículo

@@ -60,7 +60,7 @@
     color: var(--main-color-red);
 }
 .skills_flex {
-    padding-bottom: 0.2rem;
+    padding-bottom: 3.0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
