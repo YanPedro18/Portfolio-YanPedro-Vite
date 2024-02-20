@@ -16,7 +16,7 @@ import imgNode from "../../assets/img-node.svg";
 import imgJava from "../../assets/img-java.svg";
 import imgFigma from "../../assets/Figma-logo.svg";
 import imgASPnet from "../../assets/img-aspnet.svg";
-import imgCsharp from "../../assets/img-Csharp.svg";
+import imgCsharp from "../../assets/img-csharp.svg";
 import imgSsms from "../../assets/img-ssms.svg";
 import Mouse from "../../components/Mouse";
 import { useEffect, useRef } from "react";
