@@ -76,9 +76,9 @@ function Home() {
             animate="animate"
           >
             <motion.h3 variants={itemVariants}>Quem sou</motion.h3>
-            <motion.h1 variants={itemVariants}>Yan Pedro</motion.h1>
+            <motion.h1 variants={itemVariants}>Yan Bandeira</motion.h1>
             <motion.p variants={itemVariants}>
-            Estudante de desenvolvimento de sistemas, focado atualmente na
+            Pós Graduando em Engenharia de Software, focado atualmente na
               área do {" "}
             <Typewriter />.
 
@@ -87,8 +87,8 @@ function Home() {
               {" "}
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing"
-                download="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing"
+                href="https://drive.google.com/file/d/10Hsv2tnHlpnddCtKTjctyTjqh6eARwmd/view?usp=sharing"
+                download="https://drive.google.com/file/d/10Hsv2tnHlpnddCtKTjctyTjqh6eARwmd/view?usp=sharing"
               >
                 {" "}
                 Currículo

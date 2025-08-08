@@ -7,11 +7,11 @@ import { motion, cubicBezier } from "framer-motion";
 import { Router } from "react-router-dom";
 import Skills from "../../components/Skills";
 import imgReact from "../../assets/img-skills-react.svg";
-import imgStyled from "../../assets/styled-components.svg";
-import imgVite from "../../assets/img-vite.svg";
+import imgPostgre from "../../assets/img-postgre.svg";
+import imgKafka from "../../assets/img-kafka.svg";
 import imgPhp from "../../assets/img-php.svg";
 import imgSql from "../../assets/img-mysql.svg";
-import imgSass from "../../assets/img-sass.svg";
+import imgRabbitmq from "../../assets/img-rabbitmq.svg";
 import imgNode from "../../assets/img-node.svg";
 import imgJava from "../../assets/img-java.svg";
 import imgFigma from "../../assets/Figma-logo.svg";
@@ -32,23 +32,37 @@ const skills = [
   {
     img: imgReact,
     text: "React",
-    number: 65,
+    number: 81,
   },
   {
-    img: imgStyled,
-    text: "Styled - Components",
-    number: 77,
+    img: imgPostgre,
+    text: "PostgreSQL",
+    number: 55,
   },
   {
     img: imgSql,
     text: "MySql",
-    number: 40,
+    number: 65,
   },
-
+  {
+    img: imgASPnet,
+    text: "ASP.NET Core MVC",
+    number: 65,
+  },
+  {
+    img: imgCsharp,
+    text: "C#",
+    number: 64,
+  },
+  {
+    img: imgSsms,
+    text: "SSMS + SqlServer",
+    number: 68,
+  },
   {
     img: imgNode,
     text: "Node.Js",
-    number: 34,
+    number: 42,
   },
   {
     img: imgFigma,
@@ -56,14 +70,14 @@ const skills = [
     number: 74,
   },
   {
-    img: imgVite,
-    text: "Vite.Js",
-    number: 63,
+    img: imgKafka,
+    text: "Kafka",
+    number: 20,
   },
   {
-    img: imgSass,
-    text: "Sass",
-    number: 19,
+    img: imgRabbitmq,
+    text: "RabbitMQ",
+    number: 29,
   },
   {
     img: imgPhp,
@@ -75,26 +89,21 @@ const skills = [
     text: "Java",
     number: 33,
   },
-  {
-    img: imgASPnet,
-    text: "ASP.NET Core MVC",
-    number: 35,
-  },
-  {
-    img: imgCsharp,
-    text: "C#",
-    number: 44,
-  },
-  {
-    img: imgSsms,
-    text: "SSMS + SqlServer",
-    number: 38,
-  },
+
 ];
 
 const accordion = [
-  {
+    {
     id: 1,
+    title: "Analista Desenvolvedor FullStack - Reply / Hermes Reply",
+    date: "05/04/2024 - 01/08/2025",
+    job: "Analista Desenvolvedor FullStack",
+    text: "Durante minha atuação como desenvolvedor FullStack na Reply/Hermes Reply, participei de projetos estratégicos envolvendo inteligência artificial, visão computacional e integrações de alto desempenho. Entre os principais trabalhos, destaque para o NexVision ML, solução de inspeção de baterias baseada em IA utilizando YOLOv11, Python, NVIDIA Jetson e AWS SageMaker AI, integrada a API .NET Core MVC 8 & mensageria RabbitMQ com MQTT e Kafka, front-end React + TypeScript. Também atuei no Callidus GEN(AI) Hub, desenvolvendo um hub de serviços de IA com integrações OpenAI, AWS Bedrock e Twilio para chatbot no WhatsApp, incluindo fine-tuning de modelos. Além disso, fui responsável por implementar APIs REST seguindo princípios de Clean Architecture e SOLID com Design Pattern, BDD, integrar modelos de machine learning em sistemas produtivos, realizar code reviews, testes unitários(Copilot) e dar suporte a estagiários. Trabalhei com metodologias ágeis, utilizando SCRUM, Jira, Azure DevOps e Git/Docker para gestão e versionamento de código e container/imagem.",
+    skill1: " C# · .NET Core MVC 8/9 · ASP.NET MVC · React · TypeScript ",
+    skill2: " RabbitMQ · YOLOv11 · Python · Azure DevOps · Docker"
+  },
+  {
+    id: 2,
     title: "Estagiário em Desenvolvimento de Software FullStack - Reply / Hermes Reply",
     date: "04/12/2023 - (até o momento)",
     job: "Estagiário",
@@ -104,7 +113,7 @@ const accordion = [
   },
   {
     
-    id: 2,
+    id: 3,
     title: "Estagiário em Desenvolvimento de Software Front-end - SMPU/DPLM",
     date: "2023/07 - 2023/12",
     job: "Estagiário",
@@ -113,7 +122,7 @@ const accordion = [
     skill2: "HTML · Materialize",
   },
   {
-    id: 3,
+    id: 4,
     title: "Estagiário HelpDesk - CGE",
     date: "2022/10 - 2023/06",
     job: "Estagiário",
@@ -122,15 +131,23 @@ const accordion = [
     skill2: "Joomla · PHP",
   },
   {
-    id: 4,
-    title: "Análise Desenvolvimento de Sistemas - Una",
-    date: "2022/02 - 2024/06 (em andamento)",
-    job: "5* Período",
-    text: "Ensino Superior, Análise de Sistemas, Atividades e grupos: (5* Período 5/5) Competências: UML (Linguagem de modelagem unificada) · MVC · Java · NetBeans · Banco de dados Oracle · MySQL · Node · Express.Js · React/Angular · PhpMyAdmin · PHP · JavaScript · TDD · BDD · Scrum · Kanban · métodos e técnicas engenharia de software.",
-    skill1: "Java · Angular",
-    skill2: "MySql & UML",
+    id: 5,
+    title: "Pós-graduação em Engenharia de Software - PUC Minas",
+    date: "2024/07 - 2025/12 (em andamento)",
+    job: "Pós-graduando",
+    text: "Pós-graduação Lato Sensu voltada para o desenvolvimento e gestão de software, abordando desde análise e modelagem de sistemas até práticas avançadas de arquitetura e qualidade. Disciplinas incluem Engenharia de Requisitos, Arquitetura de Software, DevOps, Cloud Computing, Integração Contínua, Microserviços, Segurança da Informação e Inteligência Artificial aplicada. Foco em metodologias ágeis, padrões de projeto e práticas de desenvolvimento sustentável.",
+    skill1: "Arquitetura de Software · DevOps · FinOps",
+    skill2: "Microserviços & Cloud Computing AWS & Azure",
   },
-
+{
+  id: 6,
+  title: "Análise e Desenvolvimento de Sistemas - Una",
+  date: "2022/02 - 2024/08",
+  job: "Graduado",
+  text: "Ensino Superior concluído em Análise e Desenvolvimento de Sistemas. Competências adquiridas: UML (Linguagem de Modelagem Unificada) · MVC · Java · NetBeans · Banco de Dados Oracle · MySQL · Node.js · Express.js · React/Angular · PhpMyAdmin · PHP · JavaScript · TDD · BDD · Scrum · Kanban · métodos e técnicas de engenharia de software.",
+  skill1: "Java · Angular",
+  skill2: "MySQL & UML",
+}
 
 ];
 

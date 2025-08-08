@@ -3,12 +3,15 @@ import styles from "./Select.module.css";
 import CardProjects from "../CardProjects";
 import imgPizza from "../../assets/img-pizza.png";
 import imgJobAlmeida from "../../assets/imgJobAlmeida.png";
+import imgJobAdvogada from "../../assets/img-jobadvogada.png";
 import imgJobContaibeis from "../../assets/imgJobContabeis.png";
 import imgYanSongs from "../../assets/ImgYanSongs.png";
 import imgEnsinio from "../../assets/imgEnsinio.png";
 import imgAiko from "../../assets/imgAiko.png";
 import imgMultiset from "../../assets/imgMultiset.png";
 import imgEcommerce from "../../assets/imgEcommerce.jpg";
+import imgpizzaShop from "../../assets/img-projetopizzashop.jpg";
+import imgFinWise from "../../assets/imgprojectpessoal.png";
 import { motion } from "framer-motion";
 import { customEase } from "../../Pages/Sobre";
 
@@ -24,6 +27,57 @@ function Select() {
       case "react":
         return (
           <>
+           <motion.div
+              key="finWise"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · FinWise API SaaS"
+                imgs={imgFinWise}
+                skill1=".NET Core 9 & PostgreSQL"
+                skill2="React"
+                skill3="RabbitMQ"
+                linkRep={"https://github.com/YanPedro18/finwiseapi-web-dotnet-o1"}
+                linkSit={"https://github.com/YanPedro18/finwiseapi-web-react-o1"}
+              />
+            </motion.div>
+             <motion.div
+              key="pizzaShop"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · Pizza Shop API RocketSeat"
+                imgs={imgpizzaShop}
+                skill1="React"
+                skill2="Shadcn"
+                skill3="TypeScript & Node & Prisma"
+                linkRep={"https://github.com/YanPedro18/project-pizza-shop"}
+                linkSit={"https://github.com/YanPedro18/project-pizza-shop"}
+              />
+            </motion.div>
+              <motion.div
+              key="ecommerce-FlagStore"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · ecommerce-FlagStore"
+                imgs={imgEcommerce}
+                skill1="TypeScript"
+                skill2="Styled-Components"
+                skill3="Context API"
+                linkRep={"https://github.com/YanPedro18/ecommerce-FlagStore"}
+                linkSit={"https://ecommerce-flagstore-git-main-yanpedro18.vercel.app/"}
+              />
+            </motion.div>
             <motion.div
               key="yanSongs"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -39,23 +93,6 @@ function Select() {
                 skill3="DBfake"
                 linkRep={"https://github.com/YanPedro18/YanSongs-App"}
                 linkSit={"https://yansongs-app.vercel.app/"}
-              />
-            </motion.div>
-            <motion.div
-              key="ecommerce-FlagStore"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.25, ease: customEase }}
-            >
-              <CardProjects
-                title="Projeto · ecommerce-FlagStore"
-                imgs={imgEcommerce}
-                skill1="TypeScript"
-                skill2="Styled-Components"
-                skill3="Context API"
-                linkRep={"https://github.com/YanPedro18/ecommerce-FlagStore"}
-                linkSit={"https://ecommerce-flagstore-git-main-yanpedro18.vercel.app/"}
               />
             </motion.div>
             <motion.div
@@ -101,6 +138,57 @@ function Select() {
       case "todos":
         return (
           <>
+           <motion.div
+              key="finWise"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · FinWise API SaaS"
+                imgs={imgFinWise}
+                skill1=".NET Core 9 & PostgreSQL"
+                skill2="React"
+                skill3="RabbitMQ"
+                linkRep={"https://github.com/YanPedro18/finwiseapi-web-dotnet-o1"}
+                linkSit={"https://github.com/YanPedro18/finwiseapi-web-react-o1"}
+              />
+            </motion.div>
+             <motion.div
+              key="pizzaShop"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · Pizza Shop API RocketSeat"
+                imgs={imgpizzaShop}
+                skill1="React"
+                skill2="Shadcn"
+                skill3="TypeScript & Node & Prisma"
+                linkRep={"https://github.com/YanPedro18/project-pizza-shop"}
+                linkSit={"https://github.com/YanPedro18/project-pizza-shop"}
+              />
+            </motion.div>
+             <motion.div
+              key="ecommerce-FlagStore"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Projeto · ecommerce-FlagStore"
+                imgs={imgEcommerce}
+                skill1="TypeScript"
+                skill2="Styled-Components"
+                skill3="Context API"
+                linkRep={"https://github.com/YanPedro18/ecommerce-FlagStore"}
+                linkSit={"https://ecommerce-flagstore-git-main-yanpedro18.vercel.app/"}
+              />
+            </motion.div>
             <motion.div
               key="pizzaWeb"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -133,23 +221,6 @@ function Select() {
                 skill3="HTML"
                 linkRep={"https://github.com/YanPedro18/Yan--Pizzas"}
                 linkSit={"https://yan-pizzas-git-main.yanpedro18.vercel.app/"}
-              />
-            </motion.div>
-            <motion.div
-              key="ecommerce-FlagStore"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.25, ease: customEase }}
-            >
-              <CardProjects
-                title="Projeto · ecommerce-FlagStore"
-                imgs={imgEcommerce}
-                skill1="TypeScript"
-                skill2="Styled-Components"
-                skill3="Context API"
-                linkRep={"https://github.com/YanPedro18/ecommerce-FlagStore"}
-                linkSit={"https://ecommerce-flagstore-git-main-yanpedro18.vercel.app/"}
               />
             </motion.div>
             <motion.div
@@ -250,6 +321,7 @@ function Select() {
       case "jobs":
         return (
           <>
+          
             <motion.div
               key="almeidaAdvocacia"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -265,6 +337,23 @@ function Select() {
                 skill3="HTML"
                 linkRep={"https://github.com/YanPedro18"}
                 linkSit={"https://almeidaadvogadosbh.com.br/"}
+              />
+            </motion.div>
+             <motion.div
+              key="cyntiaAdvocacia"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.25, ease: customEase }}
+            >
+              <CardProjects
+                title="Freelancer · Advocacia Familiar"
+                imgs={imgJobAdvogada}
+                skill1="Javascript"
+                skill2="Css"
+                skill3="HTML"
+                linkRep={"https://github.com/YanPedro18/freela-advocacia-familiar"}
+                linkSit={"https://yanpedro18.github.io/freela-advocacia-familiar/"}
               />
             </motion.div>
             <motion.div

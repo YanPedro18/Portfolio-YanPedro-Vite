@@ -17,8 +17,8 @@ function CardProfile() {
         <div className={styles.img}>
           <img src={photo} alt="" />
         </div>
-        <span>Yan Pedro</span>
-        <p className={styles.job}>Desenvolvedor Front-end</p>
+        <span>Yan Bandeira</span>
+        <p className={styles.job}>Desenvolvedor FullStack .NET</p>
         <p>yanflag19@gmail.com | Belo Horizonte </p>
         <aside className={styles.aside}>
           <Link target="_blank" to="https://www.linkedin.com/in/yanpedro18/">
@@ -34,13 +34,13 @@ function CardProfile() {
             <GithubLogo size={30} />
           </Link>
         </aside>
-        <p>&copy; 2024 Yan. Todos os Direitos Reservados</p>
+        <p>&copy; 2025 Yan. Todos os Direitos Reservados</p>
         <button>
           {" "}
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing"
-            download="https://drive.google.com/file/d/1tL76lqtBJWXCZcxajzmwyUis2YxdIeqR/view?usp=sharing" 
+            href="https://drive.google.com/file/d/10Hsv2tnHlpnddCtKTjctyTjqh6eARwmd/view?usp=sharing"
+            download="https://drive.google.com/file/d/10Hsv2tnHlpnddCtKTjctyTjqh6eARwmd/view?usp=sharing" 
           >
             {" "}
             Currículo
